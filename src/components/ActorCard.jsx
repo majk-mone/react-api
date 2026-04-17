@@ -1,4 +1,6 @@
 function ActorCard({ actor }) {
+	const movies = actor.known_for || actor.most_famous_movies || []
+
 	return (
 		<div
 			className="card h-100 text-white border-0"
@@ -27,7 +29,7 @@ function ActorCard({ actor }) {
 				<p className="small">{actor.biography}</p>
 				<p className="fst-italic small" style={{ color: '#e8a020' }}>
 					<strong className="d-block text-warning">Known For:</strong>
-					{(actor.most_famous_movies || []).join(', ')}
+					{movies.join(', ')}
 				</p>
 				<p className="fst-italic small" style={{ color: '#e8a020' }}>
 					<strong className="d-block text-warning">Awards:</strong>
