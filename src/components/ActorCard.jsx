@@ -17,7 +17,7 @@ function ActorCard({ actor }) {
 				style={{
 					height: '280px',
 					objectFit: 'cover',
-					objectPosition: 'top',
+					objectPosition: 'center',
 				}}
 			/>
 			<div className="card-body text-center">
