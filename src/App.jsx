@@ -1,12 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useActors } from './hooks/useActors'
 
 function App() {
-	const [count, setCount] = useState(0)
+	useActors()
 
-	return <></>
+	return <div> Cast fetching app</div>
 }
 
 export default App
